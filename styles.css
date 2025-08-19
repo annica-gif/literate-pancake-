@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #EAF2F8, #FFFFFF);
+  color: #2C3E50;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #FDFEFE;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #154360;
+}
+
+.stockholm-svg {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto 0 auto;
+  display: block;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+#quiz, #result {
+  text-align: center;
+}
+
+#question {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #5DADE2;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#options button:hover {
+  background: #3498DB;
+  transform: translateY(-2px);
+}
+
+#nextBtn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background: #27AE60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#nextBtn:hover {
+  background: #1E8449;
+}
+
+#progress {
+  height: 10px;
+  background: #D5DBDB;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+#progress div {
+  height: 100%;
+  background: #5DADE2;
+  width: 0;
+  transition: width 0.4s ease;
+}
