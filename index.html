@@ -6,38 +6,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Stockholm Quiz</h1>
-    <svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" class="stockholm-svg">
-      <!-- Vatten -->
-      <rect x="0" y="180" width="600" height="70" fill="#5DADE2" />
+  <div class="quiz-container">
+    <h1>Quiz om Stockholm</h1>
+    <p class="intro">Testa dina kunskaper om vår vackra huvudstad!</p>
 
-      <!-- Stadshuset -->
-      <rect x="80" y="80" width="60" height="100" fill="#B03A2E" />
-      <rect x="100" y="40" width="20" height="40" fill="#922B21" />
-      <circle cx="110" cy="35" r="10" fill="#F1C40F" />
+    <form id="quizForm">
+      <div class="question">
+        <h2>1. Vilket år grundades Stockholm?</h2>
+        <label><input type="radio" name="q1" value="1252"> 1252</label>
+        <label><input type="radio" name="q1" value="1300"> 1300</label>
+        <label><input type="radio" name="q1" value="1400"> 1400</label>
+      </div>
 
-      <!-- Kyrkspira -->
-      <rect x="250" y="70" width="40" height="110" fill="#34495E" />
-      <polygon points="270,20 240,70 300,70" fill="#2C3E50" />
+      <div class="question">
+        <h2>2. Vad heter stadens mest kända rådhus?</h2>
+        <label><input type="radio" name="q2" value="Stadshuset"> Stadshuset</label>
+        <label><input type="radio" name="q2" value="Riksdagshuset"> Riksdagshuset</label>
+        <label><input type="radio" name="q2" value="Slottet"> Slottet</label>
+      </div>
 
-      <!-- Segelbåt -->
-      <polygon points="450,180 500,180 475,120" fill="#ECF0F1" />
-      <rect x="473" y="120" width="4" height="60" fill="#2C3E50" />
-      <polygon points="450,180 500,180 470,200" fill="#7D6608" />
-    </svg>
-  </header>
+      <div class="question">
+        <h2>3. Vilket vattenområde omger Stockholm?</h2>
+        <label><input type="radio" name="q3" value="Mälaren & Östersjön"> Mälaren & Östersjön</label>
+        <label><input type="radio" name="q3" value="Vättern"> Vättern</label>
+        <label><input type="radio" name="q3" value="Bottenviken"> Bottenviken</label>
+      </div>
 
-  <main>
-    <div id="quiz">
-      <div id="progress"><div></div></div>
-      <div id="question"></div>
-      <div id="options"></div>
-      <button id="nextBtn">Nästa</button>
-    </div>
-    <div id="result" style="display:none;"></div>
-  </main>
+      <button type="button" onclick="checkAnswers()">Skicka in</button>
+    </form>
 
-  <script src="app.js"></script>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
